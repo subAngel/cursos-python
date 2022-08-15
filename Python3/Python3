@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": "# Recursion\n",
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": "La recursión es una tecnica muy empleada en la programación informatica y consiste en que una función se llama a si misma.\n\nPython permite el concepto de recursión, esto nos permite llevar en la misma función hasta que logremos el resultado deseado.",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "def fact(n):\n    if n==1:\n        return 1\n    return n * fact(n-1)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "fact(5)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "execution_count": 7,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "120"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": "## Caso base y caso recursivo\n\nUna función es recursiva cuando con dos partes, un caso bae y un caso recursivo.\n\n- Caso base: Aquellos que para ser solucionados no necesita hacer uso de la función\n- Caso Recursivo: aquellos que requieren de la función.",
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": "## Sucesion de fibonacci\n\nSerie de numeros naturales.",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "def fibonacci(n):\n    if n >= 0:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": "fibonacci(3)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "execution_count": 13,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "3"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": "# 16 Archivos\nPython permite manipular archivos, abrirlos, leerlos, cerrarlos, escribir en ellos",
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": "archivo = open('archivo_prueba.txt')",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
